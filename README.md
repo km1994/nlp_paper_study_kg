@@ -33,9 +33,9 @@
       - [理论学习篇](#理论学习篇)
         - [【关于 知识图谱 】 那些的你不知道的事](#关于-知识图谱--那些的你不知道的事)
           - [【关于 实体链指篇】 那些的你不知道的事](#关于-实体链指篇-那些的你不知道的事)
-          - [【关于 实体消歧 】 那些的你不知道的事](#关于-实体消歧--那些的你不知道的事)
-          - [【关于KGQA 】 那些的你不知道的事](#关于kgqa--那些的你不知道的事)
-          - [【关于Neo4j  】 那些的你不知道的事](#关于neo4j---那些的你不知道的事)
+          - [【关于 实体消歧】 那些的你不知道的事](#关于-实体消歧-那些的你不知道的事)
+          - [【关于KGQA】 那些的你不知道的事](#关于kgqa-那些的你不知道的事)
+          - [【关于Neo4j】 那些的你不知道的事](#关于neo4j-那些的你不知道的事)
           - [【关于 知识图谱补全(图谱推理) 】 那些的你不知道的事](#关于-知识图谱补全图谱推理--那些的你不知道的事)
   - [参考资料](#参考资料)
 
@@ -113,16 +113,16 @@
     - （iii）准确的softmax损失可以有效地计算，而无需对负数据进行子采样。
   - 实验结果：我们展示了该方法的有效性，在实体消歧、端到端实体链接和文档检索任务上对20多个数据集进行了实验，在使用竞争系统内存占用的一小部分的情况下，获得了最新的或非常有竞争力的结果。他们的实体，我们只需简单地指定新的名称，就可以添加
 
-###### [【关于 实体消歧 】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/EntityDisambiguation/)
+###### [【关于 实体消歧】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/EntityDisambiguation/)
 
 - [【关于 DeepType 】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/EntityDisambiguation/DeepType/)
   - 论文：DeepType: Multilingual Entity Linking by Neural Type System Evolution
   - 论文地址：https://arxiv.org/abs/1802.01021
   - github：https://github.com/openai/deeptype
 
-###### [【关于KGQA 】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/KGQA/)
+###### [【关于KGQA】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/KGQA/)
 
-- [【关于KGQA 】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/KGQA/)
+- [【关于KGQA】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/KGQA/)
   - 一、基于词典和规则的方法
   - 二、基于信息抽取的方法
 - [【关于 Multi-hopComplexKBQA 】 那些你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/KGQA/ACL20_Multi-hopComplexKBQA/)
@@ -155,8 +155,20 @@
       - 问题表达 (question representation) 模块
       - 基于图结构的推理 (graph based reasoning) 模块
       - 答案排序 (answer ranking) 模块
+- [【关于 子图检索增强的知识图谱问答方法】 那些你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/SubgraphRetrievalKBQA/)
+  - 论文：Subgraph Retrieval Enhanced Model for Multi-hop Knowledge Base Question Answering
+  - 会议：ACL2022
+  - 链接：https://github.com/RUCKBReasoning/SubgraphRetrievalKBQA/tree/main/paper
+  - 代码：https://github.com/RUCKBReasoning/SubgraphRetrievalKBQA
+  - 背景：最近关于知识库问答 (KBQA) 的工作检索子图以便于推理。 
+  - 动机：
+    - 所需的子图至关重要，因为小的子图可能会排除答案，但大的子图可能会引入更多噪声。
+    - 然而，现有的检索要么是启发式的，要么与推理交织在一起，导致对部分子图的推理，在缺少中间监督时增加了推理偏差。
+  - 论文方法：本文提出了一种与后续推理过程分离的可训练子图检索器（SR），它使即插即用框架能够增强任何面向子图的 KBQA 模型。 
+  - 实验结果：与现有检索方法相比，SR 取得了显着更好的检索和 QA 性能。 通过弱监督的预训练以及端到端的微调，SRl 与 NSM（一种面向子图的推理器）相结合，用于基于嵌入的 KBQA 方法，实现了新的最先进的性能。
 
-###### [【关于Neo4j  】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/neo4j/)
+
+###### [【关于Neo4j】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/neo4j/)
 
 - [【关于Neo4j】 那些的你不知道的事](https://github.com/km1994/nlp_paper_study_kg/tree/master/KG_study/neo4j/)
   - 一、Neo4J 介绍与安装
